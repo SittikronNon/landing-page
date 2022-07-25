@@ -60,8 +60,8 @@
         top: 64px;
         left: -100%;
         opacity: 0;
-        transition: 0.5 ease;
-        background-color: #111;
+        transition: 0.5s ease;
+        
     }
 
     .menu.active {
@@ -69,7 +69,20 @@
         left: 0;
         opacity: 1;
         z-index: 1;
+        padding-left: 0;
         align-content: center;
-        transition: 0.5 ease;
+        transition: 0.5s ease;
+    }
+
+    .menu li {
+        padding-right: 0;
+    }
+
+    .menu-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        padding: 10px 0;
     }
 }

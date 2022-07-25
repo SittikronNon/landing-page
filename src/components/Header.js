@@ -15,14 +15,14 @@ function Header() {
           <div className='logo-container'>
             <a href='#'>ReDev <FiCode /></a>
           </div>
-          <ul className='menu'>
-            <li className='menu-link'>
+          <ul className={click ? 'menu active' : 'menu'}>
+            <li className='menu-link' onClick={closeMobileMenu}>
               <a href='#'>ABOUT</a>
             </li>
-            <li className='menu-link'>
+            <li className='menu-link' onClick={closeMobileMenu}>
               <a href='#'>CONTACT</a>
             </li>
-            <li className='menu-link'>
+            <li className='menu-link' onClick={closeMobileMenu}>
               <a href='#'>BLOG</a>
             </li>
           </ul>
